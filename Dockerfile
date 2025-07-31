@@ -12,4 +12,4 @@ RUN echo 'root:root' | chpasswd
 EXPOSE 4200
 
 # Start shellinabox
-CMD [ "bash" ]
+CMD ["/usr/bin/shellinaboxd", "-t", "-s", "/:LOGIN"]
